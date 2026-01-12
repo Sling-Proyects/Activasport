@@ -8,7 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
-<script type="importmap">
+    <!-- Babel para transformar JSX sobre la marcha en el navegador (solo necesario si no hay proceso de build) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="importmap">
 {
   "imports": {
     "react": "https://esm.sh/react@19.0.0",
@@ -25,6 +27,9 @@
 </head>
 <body class="bg-slate-50 text-slate-900 min-h-screen">
     <div id="root"></div>
-    <script type="module" src="index.tsx"></script>
+    <!-- Usamos data-type="module" y type="text/babel" para que Babel procese los imports y el JSX -->
+    <script type="text/babel" data-type="module">
+        import './index.tsx';
+    </script>
 </body>
 </html>
