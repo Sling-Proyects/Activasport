@@ -1,0 +1,17 @@
+
+{
+  "name": "activa-sports",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "lucide-react": "^0.460.0",
+    "recharts": "^2.13.0",
+    "@supabase/supabase-js": "^2.45.0"
+  },
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'No build step needed for ESM distribution'"
+  }
+}

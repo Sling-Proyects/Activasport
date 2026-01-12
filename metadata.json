@@ -1,0 +1,5 @@
+{
+  "name": "ActivaSports - Sistema de Gestión Deportiva",
+  "description": "Aplicación integral para la gestión de inventario, ventas y análisis de ganancias para tiendas de artículos deportivos. Incluye control de stock por talle, reportes financieros y generación de comprobantes PDF.",
+  "requestFramePermissions": []
+}
